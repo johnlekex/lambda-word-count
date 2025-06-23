@@ -2,13 +2,15 @@
 
 This project contains an AWS Lambda function that counts the number of words in a text file uploaded to an S3 bucket. The word count result is then sent via email using Amazon SNS.
 
+![alt text](images/image9.png)
+
 ## Project Structure
 
 ```
 lambda-word-count
 ├── lambda_function.py  # Main Lambda function triggered by S3 events that Utility function to count words
 ├── images          # Sample images 
-└── README.md           # Project documentation
+└── README.md       # Project documentation
 ```
 
 ## Setup Instructions
