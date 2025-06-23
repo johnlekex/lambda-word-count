@@ -6,50 +6,47 @@ This project contains an AWS Lambda function that counts the number of words in 
 
 ```
 lambda-word-count
-├── src
-│   ├── lambda_function.py       # Main Lambda function triggered by S3 events
-│   └── utils
-│       └── word_counter.py       # Utility function to count words
-├── requirements.txt              # Project dependencies
-├── event.json                    # Sample event for local testing
-└── README.md                     # Project documentation
+├── lambda_function.py  # Main Lambda function triggered by S3 events that Utility function to count words
+├── event.json          # Sample event for local testing
+└── README.md           # Project documentation
 ```
 
 ## Setup Instructions
 
 1. **Create an S3 Bucket**: Set up an S3 bucket in your AWS account where you will upload text files.
 
-bucketname: lambdaprject25
 
 2. **Create an SNS Topic**: Create an SNS topic to which the Lambda function will publish the word count results. Subscribe your email address (and optionally a phone number for SMS) to this topic.
+
+
 
 3. **Deploy the Lambda Function**:
    - Go to the AWS Lambda console.
    - Create a new Lambda function.
-   ![alt text](image.png)
+   ![alt text](images/image.png)
    - Set the runtime to Python 3.x.
-   ![alt text](image-1.png)
+   ![alt text](images/image-1.png)
    - Upload the code from the `src` directory.
    - Set the necessary permissions for the Lambda function to access S3 and SNS.
-   ![alt text](image-2.png)
+   ![alt text](images/image-2.png)
 
 
 - Press create function
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 4. **Configure S3 Trigger**: Set up an S3 trigger for the Lambda function so that it is invoked whenever a new text file is uploaded to the specified S3 bucket.
  
  Add the following text into the file 
- ![alt text](image-4.png)
+ ![alt text](images/image-4.png)
       
 
 ## Usage
 
 - Upload a text file to the configured S3 bucket.
 - The Lambda function will automatically trigger, count the words in the file, and send the result to the specified SNS topic.
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 ## Notes
