@@ -7,7 +7,7 @@ This project contains an AWS Lambda function that counts the number of words in 
 ```
 lambda-word-count
 ├── lambda_function.py  # Main Lambda function triggered by S3 events that Utility function to count words
-├── event.json          # Sample event for local testing
+├── images          # Sample images 
 └── README.md           # Project documentation
 ```
 
