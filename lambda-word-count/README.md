@@ -26,25 +26,27 @@ bucketname: lambdaprject25
 3. **Deploy the Lambda Function**:
    - Go to the AWS Lambda console.
    - Create a new Lambda function.
+   ![alt text](image.png)
    - Set the runtime to Python 3.x.
+   ![alt text](image-1.png)
    - Upload the code from the `src` directory.
    - Set the necessary permissions for the Lambda function to access S3 and SNS.
+   ![alt text](image-2.png)
+
+
+- Press create function
+![alt text](image-3.png)
 
 4. **Configure S3 Trigger**: Set up an S3 trigger for the Lambda function so that it is invoked whenever a new text file is uploaded to the specified S3 bucket.
-
-5. **Install Dependencies**: Use the `requirements.txt` file to install the necessary dependencies. You can do this by running:
-   ```
-   pip install -r requirements.txt
-   ```
+ 
+ Add the following text into the file 
+ ![alt text](image-4.png)
+      
 
 ## Usage
 
 - Upload a text file to the configured S3 bucket.
 - The Lambda function will automatically trigger, count the words in the file, and send the result to the specified SNS topic.
-
-## Testing
-
-To test the Lambda function locally, you can use the `event.json` file, which simulates an S3 file upload event. Modify the event data as needed to match your test cases.
 
 ## Notes
 
