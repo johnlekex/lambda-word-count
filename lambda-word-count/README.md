@@ -57,10 +57,23 @@ bucketname: lambdaprject25
 - Ensure that your Lambda function has the appropriate IAM role with permissions to access S3 and publish to SNS.
 - Monitor the Lambda function's logs in CloudWatch for debugging and verification of the word count results.
 
+Outcome
+===================================================
+You should get an email, with the 
 
+Title: Word Count 
+Result: The text count.
 
 
 Setup your GIT space
+==================================================
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/johnlekex/lambda-word-count.git
+git branch -M main
+git push -u origin main
+
+
 
 …or create a new repository on the command line
 echo "# lambda-word-count" >> README.md
@@ -68,10 +81,8 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/johnlekex/lambda-word-count.git
-git push -u origin main
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/johnlekex/lambda-word-count.git
-git branch -M main
+
+git add .
+git commit -m "first commit"
 git push -u origin main
