@@ -1,0 +1,39 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2023-10-01T12:00:00.000Z",
+      "eventName": "PutObject",
+      "userIdentity": {
+        "principalId": "AWS:EXAMPLE"
+      },
+      "requestParameters": {
+        "bucketName": "example-bucket",
+        "requestId": "EXAMPLE1234567890"
+      },
+      "responseElements": {
+        "x-amz-request-id": "EXAMPLE1234567890",
+        "x-amz-id-2": "EXAMPLE1234567890"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "exampleConfigId",
+        "bucket": {
+          "name": "example-bucket",
+          "ownerIdentity": {
+            "principalId": "EXAMPLE"
+          },
+          "arn": "arn:aws:s3:::example-bucket"
+        },
+        "object": {
+          "key": "path/to/your/textfile.txt",
+          "size": 1234,
+          "eTag": "EXAMPLEETAG",
+          "sequencer": "EXAMPLESEQUENCER"
+        }
+      }
+    }
+  ]
+}
