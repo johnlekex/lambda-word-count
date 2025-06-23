@@ -47,6 +47,10 @@ bucketname: lambdaprject25
 
 - Upload a text file to the configured S3 bucket.
 - The Lambda function will automatically trigger, count the words in the file, and send the result to the specified SNS topic.
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
 
 ## Notes
 
