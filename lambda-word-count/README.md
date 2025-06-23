@@ -19,6 +19,8 @@ lambda-word-count
 
 1. **Create an S3 Bucket**: Set up an S3 bucket in your AWS account where you will upload text files.
 
+bucketname: lambdaprject25
+
 2. **Create an SNS Topic**: Create an SNS topic to which the Lambda function will publish the word count results. Subscribe your email address (and optionally a phone number for SMS) to this topic.
 
 3. **Deploy the Lambda Function**:
@@ -57,7 +59,7 @@ Setup your GIT space
 …or create a new repository on the command line
 echo "# lambda-word-count" >> README.md
 git init
-git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/johnlekex/lambda-word-count.git
